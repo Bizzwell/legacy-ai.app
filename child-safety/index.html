@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Child Safety Standards — Legacy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #080808; --gold: #C9980A; --white: #f0ede8; --muted: #888;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Inter', system-ui, sans-serif;
+    }
+    body { background: var(--black); color: var(--white); font-family: var(--sans); font-weight: 300; font-size: 1rem; line-height: 1.8; -webkit-font-smoothing: antialiased; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 3rem; background: rgba(8,8,8,0.97); border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .wordmark { font-family: var(--serif); font-size: 1.5rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); text-decoration: none; }
+    .wordmark span { color: var(--gold); }
+    nav a.back { font-size: 0.78rem; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    nav a.back:hover { color: var(--white); }
+    .container { max-width: 720px; margin: 0 auto; padding: 8rem 2rem 6rem; }
+    .page-header { margin-bottom: 4rem; border-bottom: 1px solid rgba(201,152,10,0.25); padding-bottom: 2.5rem; }
+    .page-header h1 { font-family: var(--serif); font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 300; letter-spacing: 0.04em; line-height: 1.2; margin-bottom: 0.75rem; }
+    .page-header h1 em { font-style: italic; color: var(--gold); }
+    .effective { font-size: 0.82rem; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+    .section { margin-bottom: 3rem; }
+    .section h2 { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; letter-spacing: 0.06em; color: var(--gold); margin-bottom: 1rem; text-transform: uppercase; }
+    .section p { margin-bottom: 1rem; color: rgba(240,237,232,0.85); }
+    .section p:last-child { margin-bottom: 0; }
+    .section ul { margin: 0.75rem 0 1rem 1.5rem; color: rgba(240,237,232,0.85); }
+    .section ul li { margin-bottom: 0.4rem; }
+    .section a { color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(201,152,10,0.3); transition: border-color 0.2s; }
+    .section a:hover { border-color: var(--gold); }
+    .callout { border-left: 2px solid var(--gold); padding: 1rem 1.25rem; margin: 1.25rem 0; background: rgba(201,152,10,0.05); font-size: 0.95rem; color: rgba(240,237,232,0.9); }
+    .verify { background: rgba(220,60,60,0.14); border-left: 2px solid #dc3c3c; padding: 0.5rem 0.9rem; margin: 0.75rem 0; font-size: 0.85rem; color: #ffb3b3; }
+    footer { text-align: center; padding: 3rem 2rem; border-top: 1px solid rgba(255,255,255,0.06); font-size: 0.8rem; color: var(--muted); letter-spacing: 0.06em; }
+    footer a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    footer a:hover { color: var(--white); }
+    @media (max-width: 600px) { nav { padding: 1.25rem 1.5rem; } .container { padding: 7rem 1.5rem 4rem; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="wordmark">L<span>e</span>gacy</a>
+  <a href="/" class="back">← Back</a>
+</nav>
+
+<div class="container">
+
+  <div class="page-header">
+    <h1>Child Safety <em>Standards</em></h1>
+    <p class="effective">Effective date: August 26, 2026 &nbsp;·&nbsp; Legacy AI LLC</p>
+  </div>
+
+  <div class="section">
+    <p>Legacy has zero tolerance for child sexual abuse and exploitation. This page sets out what we prohibit, how we act, and — because it matters — what our architecture allows us to see and what it does not.</p>
+  </div>
+
+  <div class="section">
+    <h2>1. Legacy Is an Adults-Only Service</h2>
+    <p>Legacy requires all users to be 18 or older. We ask for confirmation of age at account creation, and we do not knowingly permit accounts belonging to minors. We do not market Legacy to young people, we build no features intended for them, and we will close any account we learn belongs to someone under 18.</p>
+    <p>This is our primary child-safety control. A service with no minors on it is not a place where children can be approached.</p>
+  </div>
+
+  <div class="section">
+    <h2>2. What Is Prohibited</h2>
+    <p>The following are prohibited absolutely, and result in immediate and permanent account termination without notice:</p>
+    <ul>
+      <li>Child sexual abuse material, in any form, including generated or synthetic material.</li>
+      <li>Sexualization of minors, including text, images, or descriptions.</li>
+      <li>Sexual solicitation of, or grooming behavior directed at, any minor.</li>
+      <li>Trading, requesting, or advertising any of the above, including through coded or indirect language.</li>
+      <li>Using Legacy to direct anyone to such material elsewhere.</li>
+    </ul>
+    <p>These prohibitions appear in our <a href="/terms">Terms of Service</a> and are accepted by every user at signup.</p>
+  </div>
+
+  <div class="section">
+    <h2>3. Reporting</h2>
+    <p>Every piece of shared content in Legacy can be reported from within the app, on every surface where content is shared with others — posts, comments, messages, community threads, chat rooms, profiles, and aliases. Reports include a dedicated child-safety category.</p>
+    <p>You can also report directly to <a href="mailto:shawn@legacy-ai.app">shawn@legacy-ai.app</a> at any time, whether or not you have a Legacy account.</p>
+    <div class="callout">
+      A report submitted under the child-safety category is escalated immediately and directly to a human, ahead of all other moderation. It does not wait in a queue.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>4. What We Do</h2>
+    <ul>
+      <li><strong>We act immediately.</strong> Child-safety reports are reviewed ahead of everything else. Other categories of report are acted on within 24 hours.</li>
+      <li><strong>We terminate.</strong> Accounts found to have violated these standards are terminated permanently, not suspended.</li>
+      <li><strong>We report to authorities.</strong> Where we become aware of apparent child sexual abuse material, we report it to the National Center for Missing &amp; Exploited Children as required by United States law.</li>
+      <li><strong>We preserve evidence.</strong> An account subject to an unresolved child-safety report cannot be permanently deleted, and cannot erase the record by deleting itself. Reports retain the information needed to act on them even if the underlying content is removed.</li>
+      <li><strong>We do not warn the reported account</strong> that a child-safety report has been filed against it.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>5. What We Can and Cannot See</h2>
+    <p>We would rather state this plainly than let anyone assume otherwise.</p>
+    <p>Legacy encrypts private content end-to-end. Journal entries are encrypted with a key held on the user's device. Direct messages between people are encrypted so that only the participants can read them. <strong>We cannot read either, and we cannot scan them — not for this, not for anything.</strong> That is a deliberate architectural choice, and we are not going to weaken it.</p>
+    <p>What this means concretely:</p>
+    <ul>
+      <li>Content shared publicly or to community spaces is readable by us and is subject to automated screening and to review.</li>
+      <li>Private journals and end-to-end encrypted messages are not readable by us and cannot be screened.</li>
+      <li>Because we cannot see that content, our response to it depends on users reporting it — which is why reporting is available everywhere and why child-safety reports bypass every queue.</li>
+      <li>Where a report concerns content we cannot read, we act on what we do hold: account information, and the metadata of who communicated with whom and when.</li>
+    </ul>
+    <p>We consider the alternative — building the ability to read our users' private lives — to be a greater harm than the gap it would close. We are not the only safeguard, and we do not pretend to be.</p>
+  </div>
+
+  <div class="section">
+    <h2>6. Compliance Contact</h2>
+    <p>For child-safety matters, including reports, law enforcement requests, and questions about these standards:</p>
+    <p>
+      Legacy AI LLC<br>
+      502 W 7th St, STE 100, Erie, PA 16502, USA<br>
+      <a href="mailto:shawn@legacy-ai.app">shawn@legacy-ai.app</a>
+    </p>
+    <p>Reports made to this address are reviewed by a person, not an automated system.</p>
+  </div>
+
+  <div class="section">
+    <h2>7. Applicable Law</h2>
+    <p>Legacy complies with United States law regarding child sexual abuse material, including its reporting obligations to the National Center for Missing &amp; Exploited Children under 18 U.S.C. § 2258A, and applicable preservation requirements. Legacy is currently available only in the United States.</p>
+  </div>
+
+  <div class="section">
+    <h2>8. Changes</h2>
+    <p>We will update these standards as Legacy changes. The effective date above reflects the most recent revision.</p>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Legacy AI LLC &nbsp;·&nbsp; <a href="/">legacy-ai.app</a> &nbsp;·&nbsp; <a href="/terms">Terms</a> &nbsp;·&nbsp; <a href="/privacy">Privacy</a>
+</footer>
+
+</body>
+</html>

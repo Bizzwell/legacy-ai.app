@@ -243,11 +243,11 @@
     }
 
     .footer-right a {
-      color: var(--grey);
+      color: var(--grey-light);
       text-decoration: none;
       transition: color 0.2s;
     }
-    .footer-right a:hover { color: var(--gold-light); }
+    .footer-right a:hover { color: var(--white); }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
@@ -318,7 +318,7 @@
       <div class="pillar">
         <div class="pillar-number">III</div>
         <div class="pillar-title">Your Data, Encrypted</div>
-        <p class="pillar-body">Journal entries, messages, and Ally insights are encrypted end-to-end. What you share with Legacy stays with you.</p>
+        <p class="pillar-body">Your journal and your private messages are encrypted with a key that lives on your device — not on our servers. We can't read them. Nobody can.</p>
       </div>
     </div>
   </section>
@@ -326,7 +326,10 @@
   <footer>
     <span class="footer-left">Legacy — Real Connection</span>
     <span class="footer-right">
-      &copy; 2026 Legacy LLC &nbsp;&middot;&nbsp;
+      <a href="/privacy">Privacy</a> &nbsp;&middot;&nbsp;
+      <a href="/terms">Terms</a> &nbsp;&middot;&nbsp;
+      <a href="/child-safety">Child Safety</a> &nbsp;&middot;&nbsp;
+      &copy; 2026 Legacy AI LLC &nbsp;&middot;&nbsp;
       <a href="mailto:shawn@legacy-ai.app">shawn@legacy-ai.app</a>
     </span>
   </footer>
